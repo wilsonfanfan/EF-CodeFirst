@@ -1,0 +1,5 @@
+F:\Leapftog\IOC_Solution\X\Entity\bin\Debug\Entity.dll
+F:\Leapftog\IOC_Solution\X\Entity\bin\Debug\Entity.pdb
+F:\Leapftog\IOC_Solution\X\Entity\obj\Debug\Entity.dll
+F:\Leapftog\IOC_Solution\X\Entity\obj\Debug\Entity.pdb
+F:\Leapftog\IOC_Solution\X\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

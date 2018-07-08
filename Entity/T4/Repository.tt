@@ -1,0 +1,24 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)$(TargetFileName)" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+<#@ include file="RepositoryTemplate.tt" #>
+<#
+var types = typeof(X.Entity.BaseEntity).Assembly.GetTypes().Where(type =>type.Name!="BaseEntity");
+RepositoryTemplate t = new RepositoryTemplate();
+foreach (var type in types) { #>
+<#
+if(typeof(X.Entity.BaseEntity).IsAssignableFrom(type) ) {
+#>
+<#
+	t.ModelType = type;
+	t.Output.File = @"Base\" + type.Name + "Repository.cs";
+	t.Output.Encoding = Encoding.UTF8;
+	t.Output.Project = @"..\..\Repository\Repository.csproj";
+    t.Render();
+#>
+<# } #>
+<# } #>

@@ -1,0 +1,388 @@
+Opened connection at 2018/5/25 11:13:39 +08:00
+
+Started transaction at 2018/5/25 11:13:39 +08:00
+
+CREATE TABLE [dbo].[UserAccount] (
+    [Id] [bigint] NOT NULL IDENTITY,
+    [Tenant] [nvarchar](50) NOT NULL,
+    [IsManage] [bit] NOT NULL,
+    [IsSuperAdministrator] [bit] NOT NULL,
+    [CreatedTime] [datetime] NOT NULL,
+    [CreaterID] [bigint] NOT NULL,
+    [ModifiedTime] [datetime],
+    [ModifierID] [bigint] NOT NULL,
+    [DeletedTime] [datetime],
+    [IsDeleted] [bit] NOT NULL,
+    [DeleterID] [bigint] NOT NULL,
+    CONSTRAINT [PK_dbo.UserAccount] PRIMARY KEY ([Id])
+)
+
+
+-- Executing at 2018/5/25 11:13:39 +08:00
+
+-- Completed in 40 ms with result: -1
+
+
+
+CREATE TABLE [dbo].[__MigrationHistory] (
+    [MigrationId] [nvarchar](150) NOT NULL,
+    [ContextKey] [nvarchar](300) NOT NULL,
+    [Model] [varbinary](max) NOT NULL,
+    [ProductVersion] [nvarchar](32) NOT NULL,
+    CONSTRAINT [PK_dbo.__MigrationHistory] PRIMARY KEY ([MigrationId], [ContextKey])
+)
+
+
+-- Executing at 2018/5/25 11:13:39 +08:00
+
+-- Completed in 56 ms with result: -1
+
+
+
+INSERT [dbo].[__MigrationHistory]([MigrationId], [ContextKey], [Model], [ProductVersion])
+VALUES (N'201805250313375_InitialCreate', N'X.Dao.ReportingDbMigrationsConfiguration',  0x1F8B0800000000000400CD58DB6EE336107D2FD07F10F49C3593DDB6D806F22EBC765218DD5CB0CA2EFA4A4B63872845AA2415C4DFB60FFDA4FE4287BA53922F7282A2C84B349A397338431E8EFCCFF7BF838FCF09F79E406926C5D4BF989CFB1E8848C64C6CA67E66D66FDEFB1F3FFCF843701527CFDEB7CAEF9DF5C348A1A7FEA331E925213A7A8484EA49C22225B55C9B492413426349DE9E9FFF4A2E2E0820848F589E177CC9846109E40FF838972282D46494DFC818B82EEDF826CC51BD5B9A804E690453FF8FC9824ADF9B71463179087CED7B540869A8416A975F35844649B109533450FEB04D01FDD6946B28295F36EEC7B23F7F6BD99326B0828A326D643212F0E25D590ED20D3FA9A87E5D2E2CD81516D66CEDAAF3A24D7D2C889A4591C48AFB5E37DFE59C2BEB6BCB5A444E5AFE675E613BAB1B8FFBC3FE9D79F38C9B4CC154406614E567DE7DB6E22CFA1DB60FF24F10539171DEE685CCF09D6340D3BD922928B3FD02EB92ED32F63DE2C6916E601DD68A2916B114E6979F7CEF1693D31587BAEDAD0587462AF80D04286A20BEA7C680121603F2A5F6B277723D80A0B690453EDC69784E7CEF863E7F06B1318F53FF673C18D7EC19E2CA5052F82A189E2A8C312A83018AFBD32EF50D15740355E24F5272A0E2049C30C3E7599C30C134760EABF152CCB9025BCA073CCF15D4020DC5F349586AB938D4D1FD30A8226CCD76713A2AF6C51C16C06167590E75A90C7E696B0A98914B0948A3217D6541A93694E1F1A9525043AD0D9E87E405C5A454185DEE7C976F81198229D132141F5A888FF6BD864721F41347CB8638D7EC9A1B8414574875D5901D774D7043D3140F73EBEE292D5E585C3CF337E178794E0A0C12E90195AED9D699F038E229EFBCC5D4C8F49A296D6CB557D4766C1E273DB7762F76D4B9CA3450EEAE3837D5AF82ECFF45607E093BEDE84437E5BBC6152528AEF9E2A026E25E4CBDE8FCEAA79CAA01AD9F4B9E2562D77DB12FBA52EF3642653B1EA5116387496D1D833424C72EEA90C7F1191C716E033B2FC6E2E58AD247CBCDC763B92ADD8673DF8C46ECD16BDB8F477314BC0DE7BC18D3ED5AD6DD16D7E6B1DC7A0B6D99FB5801E91CC9EE8927BD23DF99C4BA32B24F81BB2E75F65A893B8A1B94EA77F813A02787858BEF61919E586CA530DC6A03C9C43A4CC2BFF89C33B087BC72C0A3CAD6A04D31ACFAA8D6EF3B9F14FF9FF19E681DF3E367FCFF7CE85EB10DB3B53D38598F1C5EDC515B3C51153D52D51BB65F3849AF9879D529FA14BC81093A4683799509BA6ACF2B8CD043A48ACF99B123F589A40666EA5339F566EC531AD79BAF8F5AD7B801BB3FFBED1FA19D1979FF045DC826D67025710105DFD718B1FB421E90F62F3EC10234DB3410F6F71F019155C806B4F2598AB5ACCA8EAB6C33AA5CBADB0D0CC56D4167CAB0358D0CBE8E40EBFC4BFD1BE519BA5C252B8897E22E336966665A43B2E2CEB77F40F6E7CFBF235CCEC15D6A9FF46B2C016932BBB3EFC4A78CF1B8E67D3DB09B7640D87D53AA31B20AAD4AC1665B23DD4A71245059BE05A420AC963F40927204D37722A44F700A37DC649F6143A36D751FEF0639DC08B7ECC182D18DA2892E319A78FB2B26B13F637EF8177CA9B7C6F8140000 , N'6.2.0-61023')
+
+-- Executing at 2018/5/25 11:13:39 +08:00
+
+-- Completed in 64 ms with result: 1
+
+
+
+Committed transaction at 2018/5/25 11:13:39 +08:00
+
+Opened connection at 2018/5/25 11:17:28 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[IsManage] AS [IsManage], 
+    [Extent1].[IsSuperAdministrator] AS [IsSuperAdministrator], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[UserAccount] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:17:30 +08:00
+
+-- Failed in 36 ms with error: 列名 'Remark' 无效。
+
+
+
+Closed connection at 2018/5/25 11:17:30 +08:00
+
+Opened connection at 2018/5/25 11:18:20 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[IsManage] AS [IsManage], 
+    [Extent1].[IsSuperAdministrator] AS [IsSuperAdministrator], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[UserAccount] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:18:22 +08:00
+
+-- Failed in 50 ms with error: 列名 'Remark' 无效。
+
+
+
+Closed connection at 2018/5/25 11:18:22 +08:00
+
+Opened connection at 2018/5/25 11:21:09 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[IsManage] AS [IsManage], 
+    [Extent1].[IsSuperAdministrator] AS [IsSuperAdministrator], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[UserAccount] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:21:11 +08:00
+
+-- Failed in 48 ms with error: 列名 'Remark' 无效。
+
+
+
+Closed connection at 2018/5/25 11:21:11 +08:00
+
+Opened connection at 2018/5/25 11:23:32 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[IsManage] AS [IsManage], 
+    [Extent1].[IsSuperAdministrator] AS [IsSuperAdministrator], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[UserAccount] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:23:34 +08:00
+
+-- Failed in 42 ms with error: 列名 'Remark' 无效。
+
+
+
+Closed connection at 2018/5/25 11:23:34 +08:00
+
+Opened connection at 2018/5/25 11:24:39 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:24:40 +08:00
+
+-- Failed in 66 ms with error: 对象名 'dbo.Log' 无效。
+
+
+
+Closed connection at 2018/5/25 11:24:40 +08:00
+
+Opened connection at 2018/5/25 11:27:57 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:27:59 +08:00
+
+-- Failed in 42 ms with error: 对象名 'dbo.Log' 无效。
+
+
+
+Closed connection at 2018/5/25 11:27:59 +08:00
+
+Opened connection at 2018/5/25 11:34:36 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:34:38 +08:00
+
+-- Failed in 38 ms with error: 对象名 'dbo.Log' 无效。
+
+
+
+Closed connection at 2018/5/25 11:34:38 +08:00
+
+Opened connection at 2018/5/25 11:38:01 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:38:03 +08:00
+
+-- Failed in 540 ms with error: 对象名 'dbo.Log' 无效。
+
+
+
+Closed connection at 2018/5/25 11:38:04 +08:00
+
+Opened connection at 2018/5/25 11:40:06 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:40:08 +08:00
+
+-- Failed in 36 ms with error: 对象名 'dbo.Log' 无效。
+
+
+
+Closed connection at 2018/5/25 11:40:08 +08:00
+
+Opened connection at 2018/5/25 11:50:13 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[Remark2] AS [Remark2], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 11:50:15 +08:00
+
+-- Failed in 35 ms with error: 列名 'Remark2' 无效。
+
+
+
+Closed connection at 2018/5/25 11:50:15 +08:00
+
+Opened connection at 2018/5/25 12:06:45 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[Remark2] AS [Remark2], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 12:06:45 +08:00
+
+-- Completed in 252 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/5/25 12:06:45 +08:00
+
+Opened connection at 2018/5/25 12:08:16 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[Remark2] AS [Remark2], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 12:08:17 +08:00
+
+-- Completed in 96 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/5/25 12:08:17 +08:00
+
+Opened connection at 2018/5/25 12:10:48 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/5/25 12:10:49 +08:00
+
+-- Completed in 57 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/5/25 12:10:49 +08:00
+

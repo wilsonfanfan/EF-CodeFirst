@@ -1,0 +1,125 @@
+Opened connection at 2018/6/29 11:36:24 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/6/29 11:36:25 +08:00
+
+-- Completed in 380 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/6/29 11:36:25 +08:00
+
+Opened connection at 2018/6/29 11:36:58 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/6/29 11:36:58 +08:00
+
+-- Completed in 219 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/6/29 11:36:58 +08:00
+
+Opened connection at 2018/6/29 11:45:42 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/6/29 11:45:42 +08:00
+
+-- Completed in 110 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/6/29 11:45:42 +08:00
+
+Opened connection at 2018/6/29 11:47:17 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/6/29 11:47:17 +08:00
+
+-- Completed in 102 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/6/29 11:47:17 +08:00
+
+Opened connection at 2018/6/29 11:47:24 +08:00
+
+SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Tenant] AS [Tenant], 
+    [Extent1].[Remark] AS [Remark], 
+    [Extent1].[CreatedTime] AS [CreatedTime], 
+    [Extent1].[CreaterID] AS [CreaterID], 
+    [Extent1].[ModifiedTime] AS [ModifiedTime], 
+    [Extent1].[ModifierID] AS [ModifierID], 
+    [Extent1].[DeletedTime] AS [DeletedTime], 
+    [Extent1].[IsDeleted] AS [IsDeleted], 
+    [Extent1].[DeleterID] AS [DeleterID]
+    FROM [dbo].[Log] AS [Extent1]
+    WHERE 0 = [Extent1].[IsDeleted]
+
+
+-- Executing at 2018/6/29 11:47:24 +08:00
+
+-- Completed in 434 ms with result: SqlDataReader
+
+
+
+Closed connection at 2018/6/29 11:47:25 +08:00
+

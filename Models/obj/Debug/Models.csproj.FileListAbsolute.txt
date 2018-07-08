@@ -1,0 +1,5 @@
+F:\Leapftog\IOC_Solution\X\Models\bin\Debug\Models.dll
+F:\Leapftog\IOC_Solution\X\Models\bin\Debug\Models.pdb
+F:\Leapftog\IOC_Solution\X\Models\obj\Debug\Models.dll
+F:\Leapftog\IOC_Solution\X\Models\obj\Debug\Models.pdb
+F:\Leapftog\IOC_Solution\X\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

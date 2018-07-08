@@ -1,0 +1,11 @@
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\IService.dll
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\IService.pdb
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\IDao.dll
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\Models.dll
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\Entity.dll
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\IDao.pdb
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\Models.pdb
+F:\Leapftog\IOC_Solution\X\IService\bin\Debug\Entity.pdb
+F:\Leapftog\IOC_Solution\X\IService\obj\Debug\IService.csprojResolveAssemblyReference.cache
+F:\Leapftog\IOC_Solution\X\IService\obj\Debug\IService.dll
+F:\Leapftog\IOC_Solution\X\IService\obj\Debug\IService.pdb

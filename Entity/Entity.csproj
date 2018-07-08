@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{196E8B07-AEA1-411D-AE99-13CF02A3F802}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X.Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Base\Log.cs" />
+    <Compile Include="Base\UserAccount.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T4\DAOTemplate.cs" />
+    <Compile Include="T4\DaoTemplate1.cs" />
+    <Compile Include="T4\DAOTemplate2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAOTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4\IDaoTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IDaoTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4\IServiceTemplate - 复制.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IServiceTemplate - 复制.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4\IServiceTemplate.cs" />
+    <Compile Include="T4\IServiceTemplate1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IServiceTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4\ModelTemplate.cs" />
+    <Compile Include="T4\ModelTemplate1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4\ServiceTemplate.cs" />
+    <Compile Include="T4\ServiceTemplate1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceTemplate.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T4\Dao.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dao1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\Dao\Base\LogDao.cs
+..\..\Dao\Base\UserAccountDao.cs
+.\Dao1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\DAOTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DAOTemplate2.cs</LastGenOutput>
+      <LastOutputs>.\DAOTemplate2.cs</LastOutputs>
+    </None>
+    <None Include="T4\DataContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DataContext1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\Dao\DataContext.cs
+.\DataContext1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\IDao.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IDao1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\IDao\Base\ILogDao.cs
+..\..\IDao\Base\IUserAccountDao.cs
+.\IDao1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\IDaoTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IDaoTemplate.cs</LastGenOutput>
+      <LastOutputs>.\IDaoTemplate.cs</LastOutputs>
+    </None>
+    <None Include="T4\Initializer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Initializer1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\Service\Initializer.cs
+.\Initializer1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\IService.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IService1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\IService\Base\ILogService.cs
+..\..\IService\Base\IUserAccountService.cs
+.\IService1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\IServiceTemplate - 复制.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IServiceTemplate - 复制.cs</LastGenOutput>
+      <LastOutputs>.\IServiceTemplate - 复制.cs</LastOutputs>
+    </None>
+    <None Include="T4\IServiceTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IServiceTemplate1.cs</LastGenOutput>
+      <LastOutputs>.\IServiceTemplate1.cs</LastOutputs>
+    </None>
+    <None Include="T4\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.txt</LastGenOutput>
+      <LastOutputs>
+..\..\Models\Base\Log.cs
+..\..\Models\Base\UserAccount.cs
+.\Model1.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\ModelTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelTemplate1.cs</LastGenOutput>
+      <LastOutputs>.\ModelTemplate1.cs</LastOutputs>
+    </None>
+    <None Include="T4\Service.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Service.txt</LastGenOutput>
+      <LastOutputs>
+..\..\Service\Base\LogService.cs
+..\..\Service\Base\UserAccountService.cs
+.\Service.txt
+</LastOutputs>
+    </None>
+    <None Include="T4\ServiceTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ServiceTemplate1.cs</LastGenOutput>
+      <LastOutputs>.\ServiceTemplate1.cs</LastOutputs>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="T4\Dao.txt" />
+    <Content Include="T4\Dao1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dao.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\DataContext.txt" />
+    <Content Include="T4\DataContext1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataContext.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\IDao.txt" />
+    <Content Include="T4\IDao1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IDao.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\IDaoTemplate.txt" />
+    <Content Include="T4\Initializer.txt" />
+    <Content Include="T4\Initializer1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Initializer.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\IService.txt" />
+    <Content Include="T4\IService1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IService.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\IServiceTemplate - 复制.txt" />
+    <Content Include="T4\Model.txt" />
+    <Content Include="T4\Model1.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Content>
+    <Content Include="T4\Service.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Service.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

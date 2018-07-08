@@ -1,0 +1,16 @@
+F:\Leapftog\IOC_Solution\X\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\Dao.dll.config
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\Dao.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\Dao.pdb
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\Entity.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.SqlServer.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\IDao.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\Entity.pdb
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\IDao.pdb
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.xml
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.SqlServer.xml
+F:\Leapftog\IOC_Solution\X\Dao\obj\Debug\Dao.dll
+F:\Leapftog\IOC_Solution\X\Dao\obj\Debug\Dao.pdb
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.Extended.dll
+F:\Leapftog\IOC_Solution\X\Dao\bin\Debug\EntityFramework.Extended.xml

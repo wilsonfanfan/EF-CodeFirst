@@ -1,0 +1,24 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)$(TargetFileName)" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+<#@ include file="ModelTemplate.tt" #>
+<#
+var types = typeof(X.Entity.BaseEntity).Assembly.GetTypes().Where(type =>type.Name!="BaseEntity");
+ModelTemplate t = new ModelTemplate();
+foreach (var type in types) { #>
+<#
+if(typeof(X.Entity.BaseEntity).IsAssignableFrom(type) ) {
+#>
+<#
+	t.EntityType = type;
+	t.Output.File = @"Base\" + type.Name + ".cs";
+	t.Output.Encoding = Encoding.UTF8;
+	t.Output.Project = @"..\..\Models\Models.csproj";
+    t.Render();
+#>
+<# } #>
+<# } #>

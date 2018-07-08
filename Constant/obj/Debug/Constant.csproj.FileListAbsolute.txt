@@ -1,0 +1,5 @@
+F:\Leapftog\IOC_Solution\X\Constant\bin\Debug\Constant.dll
+F:\Leapftog\IOC_Solution\X\Constant\bin\Debug\Constant.pdb
+F:\Leapftog\IOC_Solution\X\Constant\obj\Debug\Constant.dll
+F:\Leapftog\IOC_Solution\X\Constant\obj\Debug\Constant.pdb
+F:\Leapftog\IOC_Solution\X\Constant\obj\Debug\Constant.csprojResolveAssemblyReference.cache

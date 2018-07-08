@@ -1,0 +1,24 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(TargetDir)$(TargetFileName)" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+<#@ include file="ServiceTemplate.tt" #>
+<#
+var types = typeof(X.Entity.BaseEntity).Assembly.GetTypes().Where(type =>type.Name!="BaseEntity");
+ServiceTemplate t = new ServiceTemplate();
+foreach (var type in types) { #>
+<#
+if(typeof(X.Entity.BaseEntity).IsAssignableFrom(type) ) {
+#>
+<#
+	t.ModelType = type;
+	t.Output.File = @"Base\" + type.Name + "Service.cs";
+	t.Output.Encoding = Encoding.UTF8;
+	t.Output.Project = @"..\..\Service\Service.csproj";
+    t.Render();
+#>
+<# } #>
+<# } #>
